@@ -1,0 +1,23 @@
+asyncapi: 2.0.0
+info:
+  title: Cryb/Core Events
+  description: This is the API reference for Core's Events.
+  version: 0.0.1
+
+servers:
+  broker:
+    url: broker.cryb.app
+    description: The rabbitMQ server that cryb uses to communicate.
+    protocol: amqp
+  websocket:
+    url: core.cryb.app
+    description: The websocket server run via Core.
+    protocol: ws
+
+channels:
+  user/signed-up:
+    subscribe:
+      $ref: "../messages/userDescription.yaml"
+  user/session-created:
+    subscribe:
+      $ref: "../messages/sessionDescription.yaml"

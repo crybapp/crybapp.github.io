@@ -1,0 +1,16 @@
+message:
+  name: sessionDescription
+  title: Session Description
+  description: A message describing a session that was created.
+  contentType: application/json
+  payload:
+    type: object
+    properties:
+      UserID:
+        type: string
+        format: snowflake
+      SessionID:
+        type: string
+      Expiration:
+        type: string
+        format: date-time

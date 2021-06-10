@@ -1,0 +1,21 @@
+message:
+  name: userDescription
+  title: User Description
+  description: A message describing a user.
+  contentType: application/json
+  payload:
+    type: object
+    properties:
+      userID:
+        type: string
+        format: snowflake
+      firstName:
+        type: string
+      lastName:
+        type: string
+      email:
+        type: string
+        format: email
+      joinedDate:
+        type: string
+        format: date-time
