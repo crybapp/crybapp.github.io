@@ -12,6 +12,9 @@
   "bugs": {
     "url": "https://github.com/Crybapp/two/issues"
   },
+  "scripts": {
+    "build-html": "ag core/events.yaml @asyncapi/html-template -o ./docs"
+  },
   "devDependencies": {
     "@asyncapi/generator": "^1.7.1"
   }

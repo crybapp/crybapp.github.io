@@ -6,11 +6,11 @@ message:
   payload:
     type: object
     properties:
-      UserID:
+      userID:
         type: string
         format: snowflake
-      SessionID:
+      sessionID:
         type: string
-      Expiration:
+      expiration:
         type: string
         format: date-time
