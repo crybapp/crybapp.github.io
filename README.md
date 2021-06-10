@@ -1,3 +1,3 @@
-# `apidoc`
+# `Cryb Api Docs`
 
-> TODO: description
+This is the github pages repo for the api docs for cryb.
